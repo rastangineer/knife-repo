@@ -1,4 +1,4 @@
-# My experience following chef.io courses
+# Following chef.io courses
 
 This is intended only for education purposes.
 
