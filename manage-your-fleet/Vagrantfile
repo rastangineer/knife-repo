@@ -1,3 +1,6 @@
+# File copied from https://learnchef.s3.eu-west-2.amazonaws.com/knife-profiles/Vagrantfile
+# I'm not the owner of the original file
+
 $tokenscript = <<-SCRIPT
 cat > data-collector-token.toml <<EOF
 [auth_n.v1.sys.service]
@@ -26,7 +29,7 @@ end
 
 class CustomInstaller < VagrantVbguest::Installers::RedHat
   def install(opts=nil, &block)
-    communicate.sudo('apt-get dist-upgrade -y', opts, &block)
+    communicate.sudo('apt-get dist-upgrade -y', opts, &block) # upgrade distro before everything else
     super
   end
 end
